@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Horizon Wings</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="LOGO.jpg" width = "60" height ="60" position="topleft" ></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="C:\xampp\htdocs\home.html">HOME</a></li>
+                        <li><a href="about us.html">ABOUT US</a></li>
+                        <li><a href="fleet.html">OUR FLEET</a></li>
+                        <li><a href="services.php">SERVICES</a></li>
+                        <li><a href="prices.html">PRICES</a></li>
+                        <li><a href="airline_form.html">BOOK FLIGHTS</a></li>
+                        <li><a href="Contact Us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="showMenu"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Horizon Wings<br>Let's Fly Away In Style!</h1>
+                <p>Be it a flight to anywhere around the world - It will be Enjoyable!<br>After Flying Domestic and International Skies for Decades,<br>We Know We  are the Best!<br>Whatever the Destination You Wanna Get to, Either of our Private Jets Will Fly You There!</p>
+                <a href="" class="hero-btn" onmouseover="mouseoverevent()">Visit us to know more</a>
+            </div>
+        </section>
+        <!----->
+
+<!---------JavaScript for Toggle Menu---------->
+        <script>
+            var navlinks= document.getElementById("navlinks");
+            function showMenu(){
+                navlinks.style.right="0";
+            }
+            function hideMenu(){
+                navlinks.style.right="-200px";
+            }
+            function mouseoverevent(){
+                alert("You're in the website")
+            }
+        </script>
+    </body>
+</html>

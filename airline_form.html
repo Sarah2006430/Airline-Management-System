@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Flight</title>
+    <style>
+        body {
+            background-color: rgb(249, 224, 3);
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            text-align: center;
+            padding: 20px;
+        }
+        nav img {
+            width: 60px;
+            height: 60px;
+        }
+        h1 {
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <img src="LOGO.jpg" alt="Logo"></a>
+    <h1>Ready for Takeoff? Book Your Flight!</h1>
+</nav>
+<div class="form">
+    <form method="POST" action="insert.php">
+        <p>
+            <label for="p_id">Passenger ID</label>
+            <input type="text" name="p_id" id="p_id" required>
+        </p>
+        <p>
+            <label for="p_name">Passenger Name</label>
+            <input type="text" name="p_name" id="p_name" required>
+        </p>
+        <p>
+            <label for="ddestination">Departure Destination</label>
+            <input type="text" name="ddestination" id="ddestination" required>
+        </p>
+        <p>
+            <label for="adestination">Arrival Destination</label>
+            <input type="text" name="adestination" id="adestination" required>
+        </p>
+        <p>
+            <input type="submit" name="insert_submit" id="insert_submit" value="Submit">
+        </p>
+    </form>
+</div>
+</body>
+</html>
